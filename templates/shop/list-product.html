@@ -1,9 +1,8 @@
 {% extends 'shop/base.html' %}
 {% block content %}
     {% for product in object_list %}
-        <h2>{{ product.title }}</h2>
-        <p>{{ product.price }}</p>
-        <p>{{ product.description }}</p>
+        <h2><a href="{% url 'product_detail_url' product.slug %}">{{ product.title }}</a></h2>
+        <p><b>Цена:</b> {{ product.price }} руб.</p>
+        <p><b>Описание:</b> {{ product.description }}</p>
     {% endfor %}
-
 {% endblock content %}
