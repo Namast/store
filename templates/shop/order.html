@@ -1,0 +1,25 @@
+{% extends 'shop/base.html' %}
+
+
+{% block content %}
+    <h3>Ваши заказы</h3>
+    <table class="table">
+        <tr>
+            <td class="text-center">Товар</td>
+            <td class="text-center">Кол-во</td>
+            <td class="text-center">Цена</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+            <tr>
+                <td class="text-center"></td>
+                <td class="text-center">{{ cart.count }}</td>
+                <td class="text-center"></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+    </table>
+{% endblock content %}
